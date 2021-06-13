@@ -5,3 +5,17 @@ CREATE TABLE employee (
   FOREIGN KEY (role_id)
   FOREIGN KEY (manager_id)
 );
+
+CREATE TABLE department (
+  id INTEGER AUTO_INCREMENT NOT NULL,
+  name VARCHAR(30) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE role (
+  id INTEGER AUTO_INCREMENT NOT NULL,
+  title VARCHAR(30) NOT NULL,
+  salary DECIMAL(5,2) NOT NULL,
+  department_id INTEGER
+);
+
