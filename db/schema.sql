@@ -19,3 +19,5 @@ CREATE TABLE role (
   department_id INTEGER
 );
 
+INSERT INTO role (id)
+VALUES ("title", "salary");
